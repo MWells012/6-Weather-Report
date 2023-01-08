@@ -1,4 +1,4 @@
-#searchButton {
+#search-button {
     background-color: rgb(217, 186, 247);
     margin-left: 10pt;
     margin-top: 10pt;
@@ -6,9 +6,10 @@
     padding-right: 20pt;
 }
 
-.card {
-    padding: 10pt;
+.card-body {
+    background-color: rgb(217, 186, 247);
+    color:black;
     border-style: solid;
-    border-width: 2pt;
-    border-color: rgb(79, 25, 133);
+    border-color: black;
+    border-width: 3pt;
 }

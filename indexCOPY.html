@@ -10,7 +10,7 @@
     </head>
 
     <body>
-        <header class="container container-fluid text-center weather-header p-2">
+        <header class="container text-center weather-header p-2">
             <h1> Weather Dashboard </h1>
             <h5>Search a city to see what the weather's like!</h5>
         </header>
@@ -19,17 +19,18 @@
         <!-- body -->
         <div class="container container-fluid">
             <div class="row">
-                <nav class="col-lg-3 pb-3 d-block sidebar sidebar-sticky">
+                <nav class="col-12 col-md-3 d-block sidebar">
+                    <div class="sidebar-sticky">
                     <h4 id="form-heading" class="mt-1 h3 form-label">City Search:</h4>
                 
                         <!-- search bar on the left -->
-                        <form id="search-form" class="form">
-                            <div class=" form-group form-inline">
+                        <form id="search-button form-inline search-form" class="form">
+                            <div class="form-group form-inline">
                                 <div id="input-group">
                                     <input
                                     class="form-input weather-search"
                                     type="text"
-                                    id="search-input"
+                                    id="city-input"
                                     placeholder="enter a city"
                                     aria-labelledby="form-heading"
                                     aria-controls="today forecast"
@@ -40,8 +41,7 @@
                                                 id="search-button" 
                                                 class="btn search-button"
                                             aria-label="submit search"
-                                            >
-                                            search
+                                            >search
                                             </button>
                                             <hr class="hr weather-hr"/>
                                         </div>
@@ -49,7 +49,7 @@
                             </div>
                         </form>
                         <div class="list-group" id="history"></div>
-                    </>
+                    </div>
                 </nav>
 
                 <!-- forecast in the body -->
@@ -90,7 +90,7 @@
         crossorigin="anonymous"
         ></script>
 
-    <script src="./assets/script.js"></script>   
+    <!-- <script src="./assets/script.js"></script>    -->
 </body>
 
 </html>
